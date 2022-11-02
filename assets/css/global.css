@@ -21,7 +21,9 @@ body {
     font-family: sans-serif;
     height: 200px;
     background-image: url("C:/Users/mill/Documents/website/exercises/assets/img/fundo2.jpg");
+    background-position: center;
     background-size: cover;
+    background-repeat: repeat-y;
 }
 
 
