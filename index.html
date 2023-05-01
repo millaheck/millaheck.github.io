@@ -3,251 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=.0">
-    <title>Milla Heck | Front-end Developer | JavaScript Portfolio</title>
-    <meta name="description" content="A sample collection of my recent JavaScript projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milla Heck Portfolio</title>
+    <meta name="description" content="Creative digital designer.">
+
+	<!-- Preload large image -->
 
 	<!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/lunadoge.css" />
-    <link rel="stylesheet" href="assets/css/css-javascript.css" />
+    <link rel="stylesheet" href="https://lunevedy.com/assets/css/lunevedy.min.css" />
+    <link rel="stylesheet" href="assets/css/custom2.css">
 
-    <style>
+	<!-- Google Fonts -->
 
-        /* ============ Header Colours =============*/
-        header.hero-block-js { background-color: #fdfdfd }
-        header.hero-block-js h1 { color: #222 }
-        header.hero-block-js h2 { color: var(--gray-700) }
+    <!-- Font Awesome 6 icons. Delete if not using. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        /* Main Colours */
-        .theme-js {
-            background-image:#ff0000;background-image:
-            radial-gradient(at 40% 20%, rgb(231, 194, 115) 0, transparent 50%),
-            radial-gradient(at 80% 0%, rgb(238, 210, 133) 0, transparent 50%),
-            radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),
-            radial-gradient(at 80% 50%, rgb(246, 217, 159) 0, transparent 50%),
-            radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),
-            radial-gradient(at 80% 100%, rgb(247, 213, 146) 0, transparent 50%),
-            radial-gradient(at 0% 0%, rgb(226, 184, 68) 0, transparent 50%);
-        }
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
-        .theme-js .col-4 { background-color: var(--green-100) }
-        .theme-js h3 { color: #222 }
-        .theme-js p { color: #222 }
-
-        /* Button Colours: passive state */
-        .theme-js a.btn {
-            color: #fff; background-color: blue; transition: 0.2s;
-            border-radius: 6px
-        }
-
-        /* Button Colours: active state */
-        .theme-js a.btn:hover { background-color: darkblue }
-
-        .theme-js a.btn { background-image: linear-gradient(to right,#313131,#6e6e6e) }
-        .theme-js a.btn:hover { filter: brightness(140%) saturate(140%) }
-        .container-flex.theme-js .col-4 {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            justify-content: space-between;
-        }
-    </style>
-
-	<!-- Font Awesome 6.1 icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Line Awesome thin icons. Delete if not using. -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 </head>
 
 
 <body>
 
-    <!-- navigation menu -->
+   
+    <nav class="theme-dark">
+        <div class="container-menu menu-desktop">
+            <a href="#" class="brand">
+                <img src="/assets/img/Minha logo.png" alt="Milla" style="height:72px; width:auto">
+            </a>
 
-    <nav class="container-menu menu-desktop menu-sticky">
-        <a href="#"><img src="/portfolio/js/assets/img/Minha logo.png" alt="Milla" style="height:72px; width:auto"></a>
-        <ul class="">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../../index.html">Portfolio</a></li>
-            <li><a href="../../contact/index.html" id="btn-cta"><span>Contact</span><i class="fas fa-arrow-right"></i></a></li>
-        </ul>
-        <div class="item-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+            <div class="container-menu-links">
+
+                <div class="nav-toggle">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+
+                <ul class="links-wrapper">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a class="btn btn-solid" id="btn-cta" href="#"><span>Sign in</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+
         </div>
     </nav>
 
-    <!-- header hero block -->
-    <header class="hero-block hero-block-js">
-        <div class="hero-text-container">
-            <h1>JavaScript Projects</h1>
-            <h2>A selection of my recent JavaScript projects.</h2>
-            <img src="assets/img/code.png" alt="Sample JavaScript code">
+    <header class="theme-dark hero-bg text-center-desktop text-center-mobile desktop-min-height-90vh">
+
+        <div class="container-text">
+            <h1 class="text-shadow"></h1>
+            <h2 class="text-shadow"></h2>
         </div>
+
+        <div class="container-btn">
+            <a href="index.html" class="btn btn-solid btn-pill"><i class="fas fa-arrow-right"></i><span>Portfolio</span></a>
+            <a href="/portfolio/js/index.html" class="btn btn-outline btn-pill"><i class="fas fa-arrow-right"></i><span>Javascript Projects</span></a>
+        </div>
+
+        <div class="container-media">
+            <img src="assets/img/background.png" alt="Placeholder image">
+        </div>
+
+        <div class="container-overlay"></div>
+
     </header>
+
 
     <!-- main content with sections -->
     <main>
 
-        <section class="container-flex theme-js">
+        <!-- replace these empty sections with your own or delete them. -->
 
-            <div class="col-4">
-
-                <h3>Data Tables</h3>
-
-                <p>Populates an HTML table with data stored in an array. Includes the option to remove data items.</p>
-
-                <div class="container-btn">
-                    <a href="data-tables/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Weather for Dublin</h3>
-
-                <p>Uses the Fetch API to retrieve current weather information for the city of Dublin, Ireland.</p>
-
-                <div class="container-btn">
-                    <a href="weather/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Movies Listing</h3>
-
-                <p>Uses the Fetch API to retrieve a searchable list of movie titles and images from the Internet Movie Database.</p>
-
-                <div class="container-btn">
-                    <a href="movies/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Random Quotes Generator</h3>
-
-                <p>Uses the Fetch API to retrieve a randomly-choosen selection of ten inspiring quotations.</p>
-
-                <div class="container-btn">
-                    <a href="quotes/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
+	<!-- section starts here -->
 
 
-            <div class="col-4">
+    
 
-                <h3>Calculator with Modules</h3>
+	<!-- section starts here -->
 
-                <p>A basic calculator that uses export/import statements to share code with a JavaScript module file.</p>
+	<section class="section-selector-2 theme-dark"><div class="col-1 text-center">
+        <h2>Recent projects</h2>
+        <h3>Below you can see some examples of my recent work. Check out my complete portfolio. Have a project you'd like to discuss? Let's make something great together!</h3>
+    </div>
 
-                <div class="container-btn">
-                    <a href="calculator-modules/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
+    
 
-            <div class="col-4">
+    <!-- Begin three-column flexbox grid -->
+    <div class="flex-cols-3">
 
-                <h3>Image Blue Filter</h3>
+    
+    
 
-                <p>Uses CSS variables and HTML custom data attributes to adjust the filter blur property of an image.</p>
+        <div class="col-3">
+            <figure>
+                <img src="assets/img/project-smoothie.jpg" alt="Placeholder image">
+            </figure>
+            <h3>Smooth Smoothies</h3>
+            <p>A multi-column, flexbox-based page layout and hero image with tinted overlay.</p>
+            <a href="portfolio/smoothies/index.html" class="btn btn-small btn-plain"><span>Learn more</span><i class="fas fa-arrow-right"></i></a>
+        </div>
 
-                <div class="container-btn">
-                    <a href="image-blur-filter/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
+        <div class="col-3">
+            <figure>
+                <img src="assets/img/project-fashion.jpg" alt="Placeholder image">
+            </figure>
+            <h3>Snazzy Fashion</h3>
+            <p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+            <a href="portfolio/fashion/index.html" class="btn btn-small btn-plain"><span>Learn more</span><i class="fas fa-arrow-right"></i></a>
+        </div>
 
-            <div class="col-4">
+        <div class="col-3">
+            <figure>
+                <img src="assets/img/project-van-gogh.png" alt="Placeholder image">
+            </figure>
+            <h3>Vincent Van Gogh</h3>
+            <p>A summary of the life and work of Dutch artist Vincent Van Gogh with an embeded video from Youtube.</p>
+            <a href="portfolio/van-gogh/index.html" class="btn btn-small btn-plain"><span>Learn more</span><i class="fas fa-arrow-right"></i></a>
+        </div>
 
-                <h3>Counter</h3>
+    </div>
+    <!-- End three-column flexbox grid -->
 
-                <p>An increment and decrement counter that changes the colour of the number displayed on the web page.</p>
+</section>
 
-                <div class="container-btn">
-                    <a href="counter/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
+<!-- section ends here -->
 
-            <div class="col-4">
+	</section>
 
-                <h3>Tip Calculator</h3>
-
-                <p>Calculates the tip for a restaurant bill based on the level of service and the number of customers.</p>
-
-                <div class="container-btn">
-                    <a href="tip-calculator/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Image Slideshow</h3>
-
-                <p>A slideshow with an array of images from Dublin city, Ireland.</p>
-
-                <div class="container-btn">
-                    <a href="image-slideshow/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
+	<!-- section ends here -->
 
 
-            <div class="col-4">
 
-                <h3>Random Colour Generator</h3>
 
-                <p>Uses an array of hexadecimal values to randomly generate a background colour for the web page.</p>
 
-                <div class="container-btn">
-                    <a href="colours/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
+	<!-- section starts here -->
 
-            <div class="col-4" style="background-color: transparent;">
+	<section class="section-selector-2 theme-dark">
 
-                <p></p>
-            </div>
+		
 
-            <div class="col-4"  style="background-color: transparent;">
+		<!-- Begin three-column flexbox grid -->
+		<div class="flex-cols-3">
 
-                <p></p>
-            </div>
+			<div class="col-3">
+				<figure>
+					<img src="assets/img/project-crypto-wallet.jpg" alt="Placeholder image">
+				</figure>
+				<h3>Cripto Wallet</h3>
+				<p>A dark-themed responsive web page website for a fictitious crypto wallet.</p>
+				<a href="portfolio/crypto-wallet/index.html" class="btn btn-small btn-plain"><span>Learn more</span><i class="fas fa-arrow-right"></i></a>
+			</div>
 
-        </section>
+			<div class="col-3">
+				<figure>
+					<img src="assets/img/hero.jpeg" alt="Placeholder image">
+				</figure>
+				<h3>Hero Block Gallery</h3>
+				<p>A gallery of hero blocks.</p>
+				<a href="portfolio/project-hero/index.html" class="btn btn-small btn-plain"><span>Learn more</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+			<div class="col-3">
+				<figure>
+					<img src="assets/img/multicolumn.jpeg" alt="Placeholder image">
+				</figure>
+				<h3>Multi column gallery</h3>
+				<p>A gallery of responsive, multi-column layouts.</p>
+				<a href="portfolio/project-multi-column/index.html" class="btn btn-small btn-plain"><span>Learn more</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+		</div>
+		<!-- End three-column flexbox grid -->
+
+	</section>
+
+	<!-- section ends here -->
+
+
+    <section class="theme-light section-selector-6 w-800px text-center-desktop text-center-mobile">
+        <h3>Sign up for our newsletter</h3>
+        <form action="https://formspree.io/f/xgebwapk" id="email-signup" method="POST" style="font-family: sans-serif">
+            <label for="email-box"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email-box" id="email-box" required>
+
+            <p>&nbsp;</p>
+            <button type="submit" class="btn btn-solid">Sign Up</button>
+        </form>
+
+    </section>
 
     </main>
 
-
     <!-- footer -->
-	<footer>
+    <footer></footer>
 
-		<h2>Milla Heck</h2>
+    <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
 
-		<h3>Excellence in digital creation</h3>
-
-		<ul class="footer-links">
-			<li><a href="../../index.html">Home</a></li>
-			<li><a href="../../index.html">Portfolio</a></li>
-			<li><a href="../../contact/index.html">Contact</a></li>
-		</ul>
-
-		<ul class="footer-icons">
-			<li><a href="https://www.linkedin.com/nnnnnnnnnnn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/nnnnnnnnnn" target="_blank"><i class="fab fa-github-square"></i></a></li>
-		</ul>
-
-		<p class="index.html"> <a href="../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &amp; Legal</a> </p>
-
-    </footer>
-
-    <script src="assets/js/menu.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "content": {
+    "href": "https://username.github.io/privacy.html"
+  }
+});
+</script>
 
 </body>
 </html>
-
-
-
-
-
-
